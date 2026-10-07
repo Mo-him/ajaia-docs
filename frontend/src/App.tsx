@@ -1,0 +1,2 @@
+import {useState} from 'react'; import {useAuth} from './context/AuthContext'; import {Login} from './pages/Login'; import {Dashboard} from './pages/Dashboard'; import {Editor} from './pages/Editor';
+export default function App(){const {user,loading}=useAuth();const [docId,setDocId]=useState<number|null>(null);if(loading)return <div className="center">Loading…</div>;if(!user)return <Login/>;return docId?<Editor id={docId} back={()=>setDocId(null)}/>:<Dashboard open={setDocId}/>}

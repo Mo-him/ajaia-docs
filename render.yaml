@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: ajaia-docs-api
+    runtime: docker
+    rootDir: backend
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "1440"
+      - key: CORS_ORIGINS
+        sync: false
+  - type: web
+    name: ajaia-docs-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install; npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false
