@@ -38,7 +38,7 @@ python -m app.seed
 uvicorn app.main:app --reload --port 8000
 ```
 
-API: `http://localhost:8000`  Swagger: `http://localhost:8000/docs`
+API: `https://ajaia-docs-1uen.onrender.com`  Swagger: `https://ajaia-docs-1uen.onrender.com/docs`
 
 ### Frontend
 
@@ -50,7 +50,7 @@ copy .env.example .env  # Windows
 npm run dev
 ```
 
-Open `http://localhost:5173`.
+Open `https://ajaia-docs-three-zeta.vercel.app`.
 
 ## Tests
 
@@ -70,7 +70,7 @@ Backend:
 
 Frontend:
 
-- `VITE_API_URL` — backend base URL, default `http://localhost:8000/api`
+- `VITE_API_URL` — backend base URL, default `https://ajaia-docs-1uen.onrender.com/api`
 
 ## Deployment
 
