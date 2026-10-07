@@ -133,7 +133,7 @@ Keeping sharing separate from ownership allows a document to have multiple share
 
 JWT-based authentication is used because the assignment requires a lightweight user/access model rather than enterprise identity integration.
 
-The application includes seeded demo accounts so reviewers can immediately test the sharing workflow.
+The application includes demo accounts so reviewers can immediately test the sharing workflow.
 
 ## Authorization
 
@@ -198,7 +198,7 @@ A lightweight browser editor was chosen because the required formatting set is s
 
 ### JWT Instead of OAuth
 
-The assignment allows seeded or mocked users, so JWT authentication provides a practical implementation without introducing external identity-provider configuration.
+The assignment allows mocked users, so JWT authentication provides a practical implementation without introducing external identity-provider configuration.
 
 ### TXT/MD Instead of DOCX
 

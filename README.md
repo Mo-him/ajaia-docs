@@ -4,11 +4,11 @@ A lightweight collaborative document editor built for the Ajaia AI-Native Full S
 
 ## Features
 
-- JWT login with seeded demo users
+- JWT login with demo users
 - Create, rename, edit, save, reopen documents
 - Rich text: bold, italic, underline, headings, bullets and numbered lists
 - Import `.txt` and `.md` files into editable documents
-- Share documents with another seeded user
+- Share documents with another demo user
 - Owned vs shared document sections
 - Persistent database storage (SQLite locally; PostgreSQL when `DATABASE_URL` is provided)
 - Validation, authorization and user-friendly errors

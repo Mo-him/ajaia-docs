@@ -81,7 +81,7 @@ Where a suggestion introduced unnecessary complexity, additional dependencies, o
 Examples include avoiding:
 
 * A heavy collaborative editing framework for a basic editor requirement.
-* Complex enterprise authentication for seeded assignment users.
+* Complex enterprise authentication; a lightweight JWT-based authentication flow is used for the demo.
 * DOCX parsing when TXT/MD already demonstrates the required file workflow.
 * Real-time collaboration before completing the mandatory document and sharing flows.
 
@@ -96,7 +96,7 @@ AI-generated or AI-assisted code was verified through:
 3. API testing through the backend.
 4. Testing document persistence after refresh/reopen.
 5. Testing file import behavior.
-6. Testing sharing using separate seeded users.
+6. Testing sharing using separate demo users.
 7. Testing unauthorized document access.
 8. Running automated backend tests.
 9. Testing the deployed frontend and backend after deployment.
